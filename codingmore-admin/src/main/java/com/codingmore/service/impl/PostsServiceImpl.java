@@ -98,7 +98,7 @@ public class PostsServiceImpl extends ServiceImpl<PostsMapper, Posts> implements
         // TODO 评论数
         posts.setCommentCount(0L);
 
-        // 当然登录用户
+        // 射中作者位当前登录用户
         posts.setPostAuthor(userService.getCurrentUserId());
 
         // 对图片进行转链
